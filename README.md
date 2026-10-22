@@ -1,6 +1,5 @@
 # aula-crawler
 
-![CI](https://github.com/dimapoint/aula-crawler/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 
