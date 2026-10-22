@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aula-crawler"
+dynamic = ["version"]
+description = "Descarga automáticamente el contenido de aulas virtuales Moodle (mosaicos, carpetas, subapartados, links)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Agustín Di Mario" }]
+keywords = ["moodle", "scraper", "crawler", "universidad", "apuntes"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Education",
+]
+dependencies = ["playwright>=1.45", "beautifulsoup4>=4.12"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+aula-crawler = "aula_crawler.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "aula_crawler.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 110
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
