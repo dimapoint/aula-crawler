@@ -7,7 +7,7 @@ name = "aula-crawler"
 dynamic = ["version"]
 description = "Descarga automáticamente el contenido de aulas virtuales Moodle (mosaicos, carpetas, subapartados, links)."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.15"
 license = { text = "MIT" }
 authors = [{ name = "Agustín Di Mario" }]
 keywords = ["moodle", "scraper", "crawler", "universidad", "apuntes"]

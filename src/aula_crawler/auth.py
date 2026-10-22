@@ -1,5 +1,4 @@
 """Sesión de navegador persistente: el login se hace una sola vez (a mano o con variables de entorno)."""
-from __future__ import annotations
 
 import json
 import os

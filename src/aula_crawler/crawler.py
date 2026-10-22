@@ -1,5 +1,4 @@
 """Orquestación: recorre un curso completo y delega cada actividad al Descargador."""
-from __future__ import annotations
 
 from pathlib import Path
 

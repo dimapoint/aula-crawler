@@ -1,5 +1,4 @@
 """Interpretación del HTML de Moodle. Sin red: recibe texto y devuelve estructuras."""
-from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field

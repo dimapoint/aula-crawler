@@ -1,5 +1,4 @@
 """Interfaz de línea de comandos: aula-crawler login | cursos | bajar."""
-from __future__ import annotations
 
 import argparse
 import sys

@@ -1,6 +1,6 @@
 # aula-crawler
 
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![Python](https://img.shields.io/badge/python-3.15%2B-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 
 Descarga automáticamente el contenido de tus aulas virtuales Moodle y lo deja ordenado en carpetas, aunque el profe haya armado un laberinto de mosaicos, subapartados, carpetas y links.

@@ -1,5 +1,4 @@
 """Descarga de cada tipo de actividad (archivo, carpeta, URL, página, tarea)."""
-from __future__ import annotations
 
 import json
 import time

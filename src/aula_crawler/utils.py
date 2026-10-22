@@ -1,5 +1,4 @@
 """Funciones puras de apoyo (sin red ni navegador), fáciles de testear."""
-from __future__ import annotations
 
 import re
 from pathlib import Path

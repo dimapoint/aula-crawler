@@ -1,5 +1,4 @@
 """Ventana simple (tkinter) para elegir cursos con casillas y bajarlos sin saber sus IDs."""
-from __future__ import annotations
 
 import contextlib
 import json
