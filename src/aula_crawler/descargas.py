@@ -125,7 +125,8 @@ class Descargador:
             ruta.write_text(f"<meta charset='utf-8'><h1>{act.nombre}</h1>{cuerpo}", encoding="utf-8")
         for a in cuerpo.find_all("a", href=True):
             if a["href"].startswith("http") and "pluginfile" not in a["href"]:
-                self.enlaces.append(f"- [{a.get_text(' ', strip=True) or a['href']}]({a['href']}) — {act.nombre}")
+                texto = a.get_text(" ", strip=True) or a["href"]
+                self.enlaces.append(f"- [{texto}]({a['href']}) — {act.nombre}")
         self._registrar(act, ruta)
         self.log(f"    + {ruta.name}")
 
